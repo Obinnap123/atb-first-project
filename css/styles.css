@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem 0rem 5rem;
+}
+.img-logo {
+  width: 100px;
+  min-width: 100px;
+}
+ ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5rem; 
+   font-size: 1rem;
+}
+ul li{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+/* .navbar button {
+  font-size: 1rem;
+  padding: 8px 20px 8px 20px;
+} */
+li a:visited {
+  color: black;
+}
+li a:hover,
+a:focus {
+  color: grey;
+}
+.sign-in {
+  background-color: #52b6ec;
+  border-radius: 8px;
+  border: 1px solid #52b6ec;
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 20px 8px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.login {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #52b6ec;
+  color: black;
+  text-decoration: none;
+  padding: 8px 20px 8px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* .sign-in a {
+  color: white;
+  text-decoration: none;
+} */
+.sign-in:hover {
+  color: grey !important;
+}
+.login:hover {
+  color: grey;
+}
+/* .login a {
+  color: black;
+  text-decoration: none;
+} */
+/* .auth {
+  display: flex;
+  gap: 4rem; */
+  /* margin-left: 1rem; */
+/* } */
+.hamburger {
+  border: 0;
+  background-color: white;
+  display: none;
+}
+.img-hamburger {
+  width: 10px !important;
+  height: 10px;
+}
+.header-hero {
+  display: flex;
+  justify-content: space-between;
+}
+.header-hero-one {
+  margin-top: 10rem;
+  padding: 1rem 5rem 0rem 5rem;
+  font-size: 1rem;
+}
+.header-hero img {
+  padding: 0;
+}
+.header-hero-one p {
+  margin-top: 1rem;
+  width: 50ch;
+}
+.header-hero-one span {
+  color: #52b6ec;
+}
+h2 {
+  text-transform: uppercase;
+}
+ /* .arrow {
+  width: 20px;
+  height: 12px;
+ border: 1px solid; */
+  /* margin: 2px 4px 2px 70px; */
+/* }  */
+/* .header-hero-one button {
+  margin-top: 7rem;
+  padding: 10px;
+  border: 1px solid #ff9900;
+  border-radius: 6px;
+  background-color: #ff9900;
+  color: white;
+} */
+
+.join-now-button {
+  display: flex;       /* Aligns text and image horizontally */
+  align-items: center;        /* Centers the content vertically */
+  padding: 1rem 1rem 1rem 1rem;       /* Adjust padding as needed */
+  background-color: #ff9900;  /* Example background color */
+  border: none;               /* Remove default border */
+  color: white;               /* Button text color */
+  font-size: 1rem;            /* Font size */
+  border-radius: 6px;         /* Optional: for rounded corners */
+  margin-top: 5rem;
+}
+
+.arrow {
+  margin-left: 5rem;          /* Pushes the arrow to the far right */
+  width: 20px;                /* Adjust icon size */
+  height: 18px;               /* Adjust icon size */
+}
+.figure-img-two{
+  display: none;
+}
+
+.main-section-one{
+  margin-top: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color:  #FAFAFA;
+}
+.main-section-one p{
+  /* border: 1px solid; */
+  width: 69ch;
+  text-align: center;
+  margin: auto;
+}
+.cards{
+  width: 250px;
+  height: 240px;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  padding: 5px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* margin: 20px ; */
+}
+.first-card img{
+  width: 40px;
+}
+/* .first-card p{
+  width: 200px;
+} */
+
+.cards .first-card {
+  padding: 6px; 
+  
+}
+.cards .first-card p {
+  width: 100%; /* Ensure the paragraph takes full width */
+  font-size: 14px; /* Adjust font size as needed */
+  line-height: 1.5em; /* Adjust line height if necessary */
+}
+.first-card a{
+  margin-top: 10rem;
+  border: 1px solid;
+}
+@media screen and (max-width : 1600px){
+  /* .navbar{
+    padding: 1rem 5rem 0rem 5rem !important;
+  } */
+  /* .navbar ul{
+  /* padding: 1rem 7rem 0rem 7rem;  */
+  /* font-size: 1.5rem; */
+  /* gap: 15%; */
+/* } */ */
+/* .auth{
+  font-size: 1.5rem;
+} */
+.header-hero-one{
+  padding: 1rem 7rem 0rem 7rem; 
+  font-size: 1.5rem;
+}
+}
+  
+
+@media screen and (max-width: 1024px) {
+  /* body {
+    padding: 1rem 3rem 0rem 3rem;
+  } */
+  .navbar{
+    padding: 1rem 2rem 0rem 2rem;
+    justify-content: space-between;
+  }
+  .header-hero-one{
+    padding: 1rem 2rem 0rem 2rem;
+    margin-top: 5rem;
+  }
+  .join-now-button{
+    margin-top: 2rem;
+  }
+  .figure-img{
+    width: 400px;
+  }
+  .navbar ul {
+    gap: 2rem; /* Reduce gap for smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar{
+    padding: 1rem 1.5rem 0rem 1.5rem;
+  }
+  .header-hero-one{
+    padding: 1rem 1.5rem 0rem 2.5rem;
+    margin-top: 3rem;
+  }
+  .header-hero-one p{
+    font-size: 0.75rem;
+  }
+  .join-now-button{
+    margin-top: 2rem;
+    padding: 10px 10px 10px 10px;
+  }
+  .figure-img{
+    width: 320px;
+  }
+  ul{
+    gap: 0.5rem;
+  }
+  ul li{
+    font-size: 0.75rem;
+   
+  }
+  .sign-in{
+    font-size: 0.75rem;
+  }
+  .login{
+    font-size: 0.75rem;
+  }
+  /* .sign-in {
+    padding: 8px 20px 8px 20px;
+  } */
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem 2rem 0rem 2rem;
+    
+  }
+  
+  ul {
+    display: none !important;
+  }
+  .hamburger {
+    display: block;
+    
+  }
+  .header-hero{
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .figure-img{
+    display: none;
+  }
+  .figure-img-two {
+    display: block; /* Show the image on mobile */
+    width: 100%; /* Adjust the width as needed */
+    margin-top: 1rem
+  }
+  .header-hero-one{
+    padding: 1rem 1rem 0rem 2rem;
+    margin-top: 0rem;
+  }
+  .join-now-button{
+    margin-top: 2rem;
+  }
+  .header-hero-one p{
+    width: 39ch;
+    padding-right: 2rem;
+    /* border: 1px solid; */
+    /* line-height: 22px; */
+  }
+  .join-now-button{
+    border-radius: 13px;
+    padding: 1.2rem 2.5rem 1.2rem 1rem;
+  }
+}
+  @media screen and (max-width: 400px){
+    .navbar {
+      padding: 1rem 1rem 0rem 2rem;
+    }
+    
+  }
+    
+  
+
