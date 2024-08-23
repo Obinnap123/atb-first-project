@@ -317,10 +317,10 @@ h2 {
   /* line-height: 1.5em;  */
   /* display: flex; */
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   font-weight: bold;
 }
-.section-two-div-two a {
+.subscribe{
   margin-left: 2rem;
   position: relative;
   bottom: 5px;
@@ -334,6 +334,27 @@ h2 {
   color: black;
   font-weight: bold;
   background-color: #ff9900;
+}
+.section-three{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 30px;
+}
+.div-section-three ul{
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+}
+.div-section-three ul li{
+  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center;
+  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
+  padding-left: 30px;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-weight: bold;
 }
 /* .section-two-div-two{
   display: flex;
@@ -528,7 +549,8 @@ h2 {
   }
   .div-section-two img {
     width: 100%;
-    ;
+    /* margin-right: 4rem;
+    border: 1px solid; */
     /* position: relative;
     left: 2px; */
   }
@@ -536,18 +558,34 @@ h2 {
     flex-direction: column;
     background-color: transparent;
     margin-top: 0;
+    padding: 0;
+   text-align: left;
+   padding-left: 1rem;
   }
-  .section-two-div-two {
-    margin-top: 1rem;
-    width: 100%;
+  /* .section-two-div-two { */
+    /* margin-top: 1rem;
+    width: 100%; */
     /* position: relative; */
     /* left: 40px; */
-  }
-  .section-two-div-two ul{
+  /* } */
+  /* .section-two-div-two ul{
     width: 100%;
+    text-align: left;
+  } */
+  /* .section-two-div-two a{ */
+    /* margin-bottom: 2rem; */
+  /* } */
+  .section-three{
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+    
   }
-  .section-two-div-two a{
-    margin-bottom: 2rem;
+  
+  .section-three img{
+    width: 100%;
+    position: relative;
+    top: 40px;
   }
 }
 @media screen and (max-width: 400px) {
