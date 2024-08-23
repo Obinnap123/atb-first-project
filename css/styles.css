@@ -21,7 +21,7 @@ body {
   width: 100px;
   min-width: 100px;
 }
-ul {
+.navbar-ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ ul {
   gap: 5rem;
   font-size: 1rem;
 }
-ul li {
+.navbar ul li {
   margin-bottom: 10px;
   margin-top: 10px;
   list-style-type: none;
@@ -172,10 +172,7 @@ h2 {
   text-align: center;
   margin: auto;
 }
-.div-card {
-  width: 60%;
-  margin: auto;
-}
+
 .cards-section {
   display: flex;
   justify-content: center;
@@ -198,6 +195,12 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* display: flex; */
   /* margin: 20px ; */
+}
+.div-card {
+  width: 60%;
+  margin: auto;
+  /* position: relative; */
+  /* left: 200px; */
 }
 .cards-arrow {
   /* border: 1px solid; */
@@ -255,7 +258,78 @@ h2 {
 .cards .first-card {
   padding: 6px;
 }
+/* .section-two{
+  padding: 1rem 5rem 0rem 5rem;
+  margin-bottom: 2rem;
+  font-size: 13px;
+} */
+.div-section-two{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 5rem 0rem 5rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-size: 14px;
+  background-color: #fafafa;
+  gap: 1rem;
+}
+.subscription-heading{
+  width: 50%;
+  margin: 0 auto ;
+}
+/* .div-section-two img{
+  position: relative;
+  left: 120px;
+} */
+/* .section-two-div-two h2{
+  position: relative;
+  right: 85px;
+} */
+/* .section-two-div-two p{
+  position: relative;
+  right: 85px;
+} */
+.section-two-div-two ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; 
+  /* border: 1px solid; */
+   /* position: relative;
+  right: 100px;  */
+  /* padding-right: 2rem; */
+}
+/* .section-two-div-two li{
+  padding-bottom: 1rem;
+} */
 
+.section-two-div-two ul li{
+  background-image: url('../assests/images/Group\ 13.svg'); /* Add your checkbox image */
+    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: left center; 
+    background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
+    padding-left: 30px; 
+    /* line-height: 1.5em;  */
+    display: flex; 
+    align-items: center; 
+    margin-top: 0.5rem; 
+    font-weight: bold;
+}
+.section-two-div-two ul a{
+  margin-left: 2rem;
+  border: 1px solid #ff9900;
+  position: relative;
+  top: 40px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: #ff9900;
+}
+/* .section-two-div-two{
+  display: flex;
+  flex-direction: column;
+} */
 /* .second-cards{
   width: 250px;
   height: 225px;
@@ -284,35 +358,12 @@ h2 {
     padding: 1rem 7rem 0rem 7rem;
     font-size: 1.5rem;
   }
+  .div-card {
+    left: 350px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-  /* body {
-    padding: 1rem 3rem 0rem 3rem;
-  } */
-  .navbar {
-    padding: 1rem 2rem 0rem 2rem;
-    justify-content: space-between;
-  }
-  .header-hero-one {
-    padding: 1rem 2rem 0rem 2rem;
-    margin-top: 5rem;
-  }
-  .join-now-button {
-    margin-top: 2rem;
-  }
-  .figure-img {
-    width: 400px;
-  }
-  .navbar ul {
-    gap: 2rem; /* Reduce gap for smaller screens */
-  }
-  .cards-section {
-    gap: 0rem;
-    margin-left: 0rem;
-    padding: 0;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem 0rem 1.5rem;
@@ -346,13 +397,47 @@ h2 {
   /* .sign-in {
     padding: 8px 20px 8px 20px;
   } */
+  .cards-section { 
+    padding: 0 0.75rem 0rem 0.75rem;
+    gap: 1rem;
+}
+.cards {
+  width: 230px;
+}
+}
+@media screen and (min-width: 1024px) {
+  /* body {
+    padding: 1rem 3rem 0rem 3rem;
+  } */
+  .navbar {
+    padding: 1rem 2rem 0rem 2rem;
+    justify-content: space-between;
+  }
+  .header-hero-one {
+    padding: 1rem 2rem 0rem 2rem;
+    margin-top: 5rem;
+  }
+  .join-now-button {
+    margin-top: 2rem;
+  }
+  .figure-img {
+    width: 400px;
+  }
+  .navbar ul {
+    gap: 2rem; /* Reduce gap for smaller screens */
+  }
+  .cards-section {
+    gap: 3rem;
+    margin-left: 0rem;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .navbar {
     padding: 1rem 1rem 0rem 1rem;
   }
 
-  ul {
+  .navbar-ul {
     display: none !important;
   }
   .hamburger {
@@ -419,6 +504,23 @@ h2 {
 .card-one{
   width: 100%;
 
+}
+.subscription-heading{
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.div-section-two img{
+  position: relative;
+  left: 40px;
+}
+.div-section-two{
+  flex-direction: column;
+}
+.section-two-div-two{
+  margin-top: 1rem;
+  position: relative;
+  left: 40px;
 }
 }
 @media screen and (max-width: 400px) {
