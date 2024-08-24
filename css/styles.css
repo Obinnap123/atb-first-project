@@ -289,7 +289,7 @@ h2 {
   /* padding: 1rem 5rem 0rem 5rem;
   margin-bottom: 2rem;
   margin-top: 4rem; */
-  font-size: 14px;
+  font-size: 15px;
   background-color: #fafafa;
   /* gap: 1rem; */
 }
@@ -339,12 +339,12 @@ h2 {
   background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
   background-repeat: no-repeat;
   /* background-position: left top; */
-  background-size: 20px 20px;
+  background-size: 16px 16px;
   padding-left: 30px;
   /* line-height: 1.5em;  */
   /* display: flex; */
   /* align-items: center; */
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   font-weight: bold;
 }
 .subscribe {
@@ -530,6 +530,7 @@ h2 {
     display: block; /* Show the image on mobile */
     width: 100%; /* Adjust the width as needed */
     margin-top: 2rem;
+    
   }
   .navbar-div {
     display: none;
@@ -590,6 +591,8 @@ h2 {
   }
   .div-section-two img {
     width: 100%;
+    transform: scale(0.8);
+    transform-origin: center;
     position: relative;
     left: 0;
     /* margin-right: 4rem;
@@ -599,16 +602,16 @@ h2 {
   }
   .div-section-two {
     flex-direction: column;
-    background-color: transparent;
+    /* background-color: transparent; */
     margin-top: 0;
     padding: 0;
     text-align: left;
-    padding-left: 1rem;
+    padding: 0rem 1rem;
   }
   .section-two-div-two {
-    position: relative;
+    /* position: relative; */
     right: 0;
-    top: 20px;
+    /* margin: 1rem; */
   }
   /* .section-two-div-two { */
   /* margin-top: 1rem;
@@ -626,26 +629,33 @@ h2 {
   .section-three {
     flex-direction: column;
     text-align: left;
-    padding-left: 1rem;
+    padding: 0rem 1rem;
     top: 30px;
+    background-color: #fafafa;
   }
 
   .section-three img {
     width: 100%;
     position: relative;
-    top: 30px;
+    top: 5px;
     right: 0;
+    transform: scale(0.8);
+    transform-origin: center;
   }
   .div-section-three {
     position: relative;
     left: 0;
-    top: 40px;
     order: 1;
+   
   }
   .section-four {
     flex-direction: column;
     text-align: left;
-    padding-left: 1rem;
+    padding:0 1rem;
+    background-color: #fafafa;
+    position: relative;
+    top: 60px;
+    
   }
   /* .section-four img{
     width: 100%;
@@ -657,30 +667,38 @@ h2 {
   .div-section-four {
     position: relative;
     right: 0;
-    top: 95px;
+    
   }
   .section-four img {
     width: 100%;
+    padding:0 1rem;
     position: relative;
-    top: 85px;
+    top: 10px;
     left: 0;
+    transform: scale(0.8);
+    transform-origin: center;
   }
   .section-five {
     flex-direction: column;
     text-align: left;
     padding-left: 1rem;
+    background-color: #fafafa;
+    position: relative;
+    top: 100px;
   }
   .div-section-five {
     position: relative;
     left: 0;
-    top: 110px;
+    top: 10px;
     order: 2;
   }
   .section-five img {
     width: 100%;
     position: relative;
     right: 0;
-    top: 105px;
+    top: 10px;
+    transform: scale(0.8);
+    transform-origin: center
   }
   hr {
     display: none;
