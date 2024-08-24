@@ -11,6 +11,20 @@ body {
   font-style: normal;
   font-size: 16px;
 }
+/* .ovaral {
+  width: 100%;
+  max-width: 1400px;  */
+  /* margin: 0 auto;  */
+  /* padding: 0 15px; */
+/* } */
+/* header {
+  max-width: 1400px; */
+  /* margin: 0 auto; */
+/* } */
+/* main {
+  max-width: 1400px; */
+  /* margin: 0 auto; */
+/* } */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -29,7 +43,7 @@ body {
   gap: 5rem;
   font-size: 1rem;
 }
-.navbar-div{
+.navbar-div {
   display: flex;
   gap: 5rem;
 }
@@ -271,17 +285,21 @@ h2 {
 } */
 .div-section-two {
   display: flex;
-  justify-content: space-around;
-  padding: 1rem 5rem 0rem 5rem;
+  justify-content: space-between;
+  /* padding: 1rem 5rem 0rem 5rem;
   margin-bottom: 2rem;
-  margin-top: 4rem;
+  margin-top: 4rem; */
   font-size: 14px;
   background-color: #fafafa;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 .subscription-heading {
   width: 50%;
   margin: 0 auto;
+}
+.div-section-two img {
+  position: relative;
+  left: 5rem;
 }
 /* .div-section-two img{
   position: relative;
@@ -303,6 +321,10 @@ h2 {
   right: 100px;  */
   /* padding-right: 2rem; */
 }
+.section-two-div-two {
+  position: relative;
+  right: 5rem;
+}
 /* .section-two-div-two li{
   padding-bottom: 1rem;
 } */
@@ -320,7 +342,7 @@ h2 {
   margin-top: 0.75rem;
   font-weight: bold;
 }
-.subscribe{
+.subscribe {
   margin-left: 2rem;
   position: relative;
   bottom: 5px;
@@ -335,17 +357,25 @@ h2 {
   font-weight: bold;
   background-color: #ff9900;
 }
-.section-three{
+.section-three {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
-.div-section-three ul{
+.section-three img {
+  position: relative;
+  right: 5rem;
+}
+.div-section-three ul {
   list-style-type: none; /* Remove default bullets */
   padding-left: 0;
 }
-.div-section-three ul li{
+.div-section-three {
+  position: relative;
+  left: 5rem;
+}
+.div-section-three ul li {
   background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
   background-repeat: no-repeat;
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -356,6 +386,67 @@ h2 {
   margin-top: 0.75rem;
   font-weight: bold;
 }
+.section-four {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+.section-four img {
+  position: relative;
+  left: 5rem;
+}
+.div-section-four ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+}
+.div-section-four {
+  position: relative;
+  top: 20px;
+  right: 5rem;
+}
+.div-section-four ul li {
+  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center;
+  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
+  padding-left: 30px;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+.section-five {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 30px;
+}
+.div-section-five ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+}
+.div-section-five {
+  position: relative;
+  left: 5rem;
+  top: 20px;
+}
+.section-five img {
+  position: relative;
+  right: 5rem;
+}
+.div-section-five ul li {
+  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center;
+  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
+  padding-left: 30px;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
 /* .section-two-div-two{
   display: flex;
   flex-direction: column;
@@ -402,8 +493,10 @@ h2 {
     justify-content: space-between;
   }
   .header-hero-one {
-    padding: 1rem 2rem 0rem 2rem; 
-     margin-top: 5rem; 
+    padding: 1rem 2rem 0rem 2rem;
+    margin-top: 0rem;
+    position: relative;
+    top: 100px;
   }
   .join-now-button {
     margin-top: 2rem;
@@ -412,7 +505,7 @@ h2 {
     width: 400px;
   }
   .navbar ul {
-    gap: 2rem; 
+    gap: 2rem;
   }
   .cards-section {
     gap: 3rem;
@@ -463,8 +556,6 @@ h2 {
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   .navbar {
     padding: 1rem 1rem 0rem 1rem;
@@ -490,7 +581,7 @@ h2 {
     width: 100%; /* Adjust the width as needed */
     margin-top: 2rem;
   }
-  .navbar-div{
+  .navbar-div {
     display: none;
   }
   .header-hero-one {
@@ -549,6 +640,8 @@ h2 {
   }
   .div-section-two img {
     width: 100%;
+    position: relative;
+    left: 0;
     /* margin-right: 4rem;
     border: 1px solid; */
     /* position: relative;
@@ -559,33 +652,86 @@ h2 {
     background-color: transparent;
     margin-top: 0;
     padding: 0;
-   text-align: left;
-   padding-left: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .section-two-div-two {
+    position: relative;
+    right: 0;
+    top: 20px;
   }
   /* .section-two-div-two { */
-    /* margin-top: 1rem;
+  /* margin-top: 1rem;
     width: 100%; */
-    /* position: relative; */
-    /* left: 40px; */
+  /* position: relative; */
+  /* left: 40px; */
   /* } */
   /* .section-two-div-two ul{
     width: 100%;
     text-align: left;
   } */
   /* .section-two-div-two a{ */
-    /* margin-bottom: 2rem; */
+  /* margin-bottom: 2rem; */
   /* } */
-  .section-three{
+  .section-three {
     flex-direction: column;
     text-align: left;
     padding-left: 1rem;
-    
+    top: 30px;
   }
-  
-  .section-three img{
+
+  .section-three img {
     width: 100%;
     position: relative;
-    top: 40px;
+    top: 70px;
+    right: 0;
+  }
+  .div-section-three {
+    position: relative;
+    left: 0;
+    top: 30px;
+  }
+  .section-four {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  /* .section-four img{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 100px;
+  
+  } */
+  .div-section-four {
+    position: relative;
+    right: 0;
+    top: 90px;
+  }
+  .section-four img {
+    width: 100%;
+    position: relative;
+    top: 80px;
+    left: 0;
+  }
+  .section-five {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .div-section-five {
+    position: relative;
+    left: 0;
+    top: 100px;
+  }
+  .section-five img {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 130px;
+  }
+  hr {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
