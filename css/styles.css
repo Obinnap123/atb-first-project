@@ -522,6 +522,7 @@ h2 {
     flex-direction: column;
     /* text-align: center; */
     /* text-align: center; */
+    /* text-emphasis: none; */
   }
   .figure-img {
     display: none;
