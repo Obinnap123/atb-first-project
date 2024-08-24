@@ -14,16 +14,16 @@ body {
 /* .ovaral {
   width: 100%;
   max-width: 1400px;  */
-  /* margin: 0 auto;  */
-  /* padding: 0 15px; */
+/* margin: 0 auto;  */
+/* padding: 0 15px; */
 /* } */
 /* header {
   max-width: 1400px; */
-  /* margin: 0 auto; */
+/* margin: 0 auto; */
 /* } */
 /* main {
   max-width: 1400px; */
-  /* margin: 0 auto; */
+/* margin: 0 auto; */
 /* } */
 .navbar {
   display: flex;
@@ -313,7 +313,10 @@ h2 {
   position: relative;
   right: 85px;
 } */
-.section-two-div-two ul {
+.section-two-div-two ul,
+.div-section-three ul,
+.div-section-four ul,
+.div-section-five ul {
   list-style-type: none; /* Remove default bullets */
   padding-left: 0;
   /* border: 1px solid; */
@@ -329,16 +332,18 @@ h2 {
   padding-bottom: 1rem;
 } */
 
-.section-two-div-two ul li {
+.section-two-div-two ul li,
+.div-section-three ul li,
+.div-section-four ul li,
+.div-section-five ul li {
   background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
   background-repeat: no-repeat;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: left center;
-  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
+  /* background-position: left top; */
+  background-size: 20px 20px;
   padding-left: 30px;
   /* line-height: 1.5em;  */
   /* display: flex; */
-  align-items: center;
+  /* align-items: center; */
   margin-top: 0.75rem;
   font-weight: bold;
 }
@@ -357,94 +362,39 @@ h2 {
   font-weight: bold;
   background-color: #ff9900;
 }
-.section-three {
+.section-three,
+.section-four,
+.section-five {
   display: flex;
   justify-content: space-between;
   position: relative;
   top: 10px;
 }
-.section-three img {
+.section-three img,
+.section-five img {
   position: relative;
   right: 5rem;
-}
-.div-section-three ul {
-  list-style-type: none; /* Remove default bullets */
-  padding-left: 0;
 }
 .div-section-three {
   position: relative;
   left: 5rem;
 }
-.div-section-three ul li {
-  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
-  background-repeat: no-repeat;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: left center;
-  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
-  padding-left: 30px;
-  align-items: center;
-  margin-top: 0.75rem;
-  font-weight: bold;
-}
-.section-four {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 10px;
-}
+
 .section-four img {
   position: relative;
   left: 5rem;
 }
-.div-section-four ul {
-  list-style-type: none; /* Remove default bullets */
-  padding-left: 0;
-}
+
 .div-section-four {
   position: relative;
-  top: 20px;
+  top: 10px;
   right: 5rem;
 }
-.div-section-four ul li {
-  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
-  background-repeat: no-repeat;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: left center;
-  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
-  padding-left: 30px;
-  align-items: center;
-  margin-top: 0.75rem;
-  font-weight: bold;
-}
-.section-five {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 30px;
-}
-.div-section-five ul {
-  list-style-type: none; /* Remove default bullets */
-  padding-left: 0;
-}
+
 .div-section-five {
   position: relative;
   left: 5rem;
-  top: 20px;
-}
-.section-five img {
-  position: relative;
-  right: 5rem;
-}
-.div-section-five ul li {
-  background-image: url("../assests/images/Group13.svg"); /* Add your checkbox image */
-  background-repeat: no-repeat;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: left center;
-  background-size: 20px 20px; /* Ensure the full image fits (adjust size as needed) */
-  padding-left: 30px;
-  align-items: center;
-  margin-top: 0.75rem;
-  font-weight: bold;
+  top: 10px;
 }
 
 /* .section-two-div-two{
@@ -683,13 +633,14 @@ h2 {
   .section-three img {
     width: 100%;
     position: relative;
-    top: 70px;
+    top: 30px;
     right: 0;
   }
   .div-section-three {
     position: relative;
     left: 0;
-    top: 30px;
+    top: 40px;
+    order: 1;
   }
   .section-four {
     flex-direction: column;
@@ -706,12 +657,12 @@ h2 {
   .div-section-four {
     position: relative;
     right: 0;
-    top: 90px;
+    top: 95px;
   }
   .section-four img {
     width: 100%;
     position: relative;
-    top: 80px;
+    top: 85px;
     left: 0;
   }
   .section-five {
@@ -722,13 +673,14 @@ h2 {
   .div-section-five {
     position: relative;
     left: 0;
-    top: 100px;
+    top: 110px;
+    order: 2;
   }
   .section-five img {
     width: 100%;
     position: relative;
     right: 0;
-    top: 130px;
+    top: 105px;
   }
   hr {
     display: none;
