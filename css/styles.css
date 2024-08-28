@@ -342,7 +342,7 @@ h2 {
   padding-right: 190px;
 }
 
-.second-avatars.avatar-three {
+.second-avatars .avatar-three {
   width: 25%;
   height: 10%;
 }
@@ -397,6 +397,9 @@ h2 {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
+  }
+  .section-six .section-six-text {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -560,25 +563,23 @@ h2 {
   }
   .section-six .avatar-one {
     position: relative;
-    top: 360px;
+    top: 350px;
     width: 50%;
-    max-width: 100%;
   }
-  .section-six.avatar-two {
+  .section-six .avatar-two {
     width: 50%;
     height: 10%;
-    max-width: 100%;
     position: relative;
     top: 300px;
     left: 180px;
   }
-  .avatar-three {
+  .second-avatars .avatar-three {
     width: 50%;
     height: 10%;
-    max-width: 100%;
     position: relative;
+    top: 30px;
   }
-  .avatar-four {
+  .second-avatars .avatar-four {
     width: 50%;
     height: 10%;
     position: relative;
@@ -587,7 +588,7 @@ h2 {
   .section-six a {
     top: 400px;
   }
-  .avatar-fifth {
+  .third-avatars .avatar-fifth {
     width: 50%;
     height: 10%;
     position: relative;
@@ -595,12 +596,16 @@ h2 {
   }
   .section-six {
     flex-direction: column;
-    background: none;
+    background: #fafafa;
   }
   .section-six-text {
     order: 1;
     top: 0;
     width: 100%;
+  }
+  .section-six .section-six-text p {
+    width: 70%;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 1440px) {

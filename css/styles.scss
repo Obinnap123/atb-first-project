@@ -248,7 +248,7 @@ h2 {
   margin-top: 3rem;
 }
 .section-six {
-  background: linear-gradient(180deg, #52b6ec 0%, rgba(82, 182, 236, 0) 100%) ;
+  background: linear-gradient(180deg, #52b6ec 0%, rgba(82, 182, 236, 0) 100%);
 }
 .first-avatars {
   display: flex;
@@ -296,7 +296,7 @@ h2 {
   padding-left: 190px;
   padding-right: 190px;
 }
-.second-avatars.avatar-three {
+.second-avatars .avatar-three {
   width: 25%;
   height: 10%;
 }
@@ -349,6 +349,9 @@ h2 {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
+  }
+  .section-six .section-six-text {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -514,64 +517,63 @@ h2 {
   }
   .section-six .avatar-one {
     position: relative;
-    top: 360px;
+    top: 350px;
     width: 50%;
-    max-width: 100%;
+    // max-width: 100%;
   }
 
   // height: 10%;
   // padding-top: 70px;
 
-.section-six.avatar-two {
-  width: 50%;
-  height: 10%;
-  max-width: 100%;
-  position: relative;
-  top: 300px;
-  left: 180px;
-}
-.avatar-three {
-  width: 50%;
-  height: 10%;
-  max-width: 100%;
-  position: relative;
-  // top: 30px;
-  // left: 150px;
-}
-.avatar-four {
-  width: 50%;
-  // max-width: 100%;
-  height: 10%;
-  position: relative;
-  top: 80px;
-}
-.section-six a {
-  top: 400px;
-}
-.avatar-fifth {
-  width: 50%;
-  height: 10%;
-  position: relative;
-  top: 80px;
-}
-.section-six {
-  flex-direction: column;
-  background: none;
-}
-.section-six-text {
-  order: 1;
-  top: 0;
-  width: 100%;
-  // width: 70%;
-}
-// .section-six .section-six-text p {
-//   width: 70%;
-//   max-width: 100%;
-// }
+  .section-six .avatar-two {
+    width: 50%;
+    height: 10%;
+    //
+    position: relative;
+    top: 300px;
+    left: 180px;
+  }
+  .second-avatars .avatar-three {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: 30px;
+    // left: 150px;
+  }
+  .second-avatars .avatar-four {
+    width: 50%;
+    // max-width: 100%;
+    height: 10%;
+    position: relative;
+    top: 80px;
+  }
+  .section-six a {
+    top: 400px;
+  }
+  .third-avatars .avatar-fifth {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: 80px;
+  }
+  .section-six {
+    flex-direction: column;
+    background: #fafafa;
+  }
+  .section-six-text {
+    order: 1;
+    top: 0;
+    width: 100%;
+    // width: 70%;
+  }
+  .section-six .section-six-text p {
+    width: 70%;
+    max-width: 100%;
+  }
 
-// .section-six{
-//   display: none;
-// }
+  // .section-six{
+  //   display: none;
+  // }
 }
 @media only screen and (min-width: 1440px) {
   .main-section-one h2 {
