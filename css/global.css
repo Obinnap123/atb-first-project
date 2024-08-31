@@ -284,6 +284,11 @@ body {
     padding: 0 1rem 0 1rem;
   }
 }
+@media (min-width: 1440px) {
+  .cards-section {
+    gap: 10rem;
+  }
+}
 
 .cards {
   width: 280px;
@@ -341,12 +346,18 @@ body {
 }
 
 .div-card {
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 @media (max-width: 768px) {
   .div-card {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .div-card {
+    width: 45%;
+    margin: auto;
   }
 }
 
@@ -420,7 +431,7 @@ body {
 @media (max-width: 768px) {
   .section-two-div-two {
     right: 0;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 }
 @media (min-width: 1440px) {
@@ -492,14 +503,52 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 1024px) {
+  .section-three {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    gap: 4rem;
+  }
+}
 @media (max-width: 768px) {
   .section-three {
     flex-direction: column;
     text-align: left;
     padding: 0 1rem;
     top: 30px;
+    gap: 0;
     background-color: #fafafa;
   }
+}
+@media (max-width: 768px) {
+  .section-three .div-section-three {
+    position: relative;
+    left: 0;
+    order: 1;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-three .div-section-three h2 {
+    font-size: 36px;
+  }
+}
+.section-three .div-section-three ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+@media (min-width: 1440px) {
+  .section-three .div-section-three ul {
+    font-size: 16px;
+  }
+}
+.section-three .div-section-three ul li {
+  background-image: url("../assests/images/Group13.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-left: 30px;
+  margin-top: 1rem;
 }
 @media (max-width: 768px) {
   .section-three img {
@@ -513,46 +562,75 @@ body {
 }
 @media (min-width: 1440px) {
   .section-three img {
-    width: 350px;
+    width: 300px;
   }
 }
 
+.section-four {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 10px;
+  margin-top: 3rem;
+}
+@media (max-width: 1024px) {
+  .section-four {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+  }
+}
 @media (max-width: 768px) {
-  .div-section-three {
+  .section-four {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 1rem;
+    background-color: #fafafa;
     position: relative;
-    left: 0;
-    order: 1;
-    padding-bottom: 50px;
+    top: 60px;
   }
 }
-
-.div-section-three ul {
-  list-style-type: none;
-  padding-left: 0;
+@media (max-width: 768px) {
+  .section-four img {
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+    top: 10px;
+    left: 0;
+    transform: scale(0.8);
+    transform-origin: center;
+  }
 }
-
-.div-section-three ul li {
-  background-image: url("../assests/images/Group13.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  padding-left: 30px;
-  margin-top: 1rem;
-}
-
 @media (min-width: 1440px) {
-  .div-section-three h2 {
+  .section-four img {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .section-four .div-section-four {
+    position: relative;
+    right: 0;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-four .div-section-four h2 {
     font-size: 36px;
   }
 }
-
-.div-section-four ul,
-.div-section-five ul {
+.section-four .div-section-four ul {
   list-style-type: none;
   padding-left: 0;
 }
-
-.div-section-four ul li,
-.div-section-five ul li {
+@media (min-width: 1440px) {
+  .section-four .div-section-four ul {
+    font-size: 16px;
+  }
+}
+.section-four .div-section-four ul li {
   background-image: url("../assests/images/Group13.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -560,8 +638,15 @@ body {
   margin-top: 1rem;
 }
 
+.section-five {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 10px;
+  margin-top: 3rem;
+}
 @media (max-width: 1024px) {
-  .section-four,
   .section-five {
     display: flex;
     justify-content: space-between;
@@ -570,15 +655,61 @@ body {
     padding-top: 10px;
   }
 }
-
-.section-four,
-.section-five {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 170px;
-  padding-right: 170px;
-  padding-top: 10px;
-  margin-top: 3rem;
+@media (max-width: 768px) {
+  .section-five {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fafafa;
+    position: relative;
+    top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .section-five .div-section-five {
+    position: relative;
+    left: 0;
+    top: 10px;
+    order: 2;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-five .div-section-five h2 {
+    font-size: 36px;
+  }
+}
+.section-five .div-section-five ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+@media (min-width: 1440px) {
+  .section-five .div-section-five ul {
+    font-size: 16px;
+  }
+}
+.section-five .div-section-five ul li {
+  background-image: url("../assests/images/Group13.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-left: 30px;
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .section-five img {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 10px;
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+}
+@media (min-width: 1440px) {
+  .section-five img {
+    width: 400px;
+  }
 }
 
 .section-six {
@@ -664,50 +795,6 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .section-four {
-    flex-direction: column;
-    text-align: left;
-    padding: 0 1rem;
-    background-color: #fafafa;
-    position: relative;
-    top: 60px;
-  }
-  .div-section-four {
-    position: relative;
-    right: 0;
-  }
-  .section-four img {
-    width: 100%;
-    padding: 0 1rem;
-    position: relative;
-    top: 10px;
-    left: 0;
-    transform: scale(0.8);
-    transform-origin: center;
-  }
-  .section-five {
-    flex-direction: column;
-    text-align: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: #fafafa;
-    position: relative;
-    top: 100px;
-  }
-  .div-section-five {
-    position: relative;
-    left: 0;
-    top: 10px;
-    order: 2;
-  }
-  .section-five img {
-    width: 100%;
-    position: relative;
-    right: 0;
-    top: 10px;
-    transform: scale(0.8);
-    transform-origin: center;
-  }
   .first-avatars {
     flex-direction: column;
     padding: 10px;
@@ -776,26 +863,6 @@ body {
   }
   .subscription-heading {
     font-size: 37px;
-  }
-  .section-four img {
-    width: 330px;
-  }
-  .div-section-four h2 {
-    font-size: 36px;
-  }
-  .div-section-four ul {
-    line-height: 24px;
-    font-size: 16px;
-  }
-  .section-five img {
-    width: 450px;
-  }
-  .div-section-five h2 {
-    font-size: 36px;
-  }
-  .div-section-five ul {
-    line-height: 23px;
-    font-size: 16px;
   }
   .section-six .section-six-text {
     font-size: 36px;

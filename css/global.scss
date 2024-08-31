@@ -235,6 +235,9 @@ body {
   @include mobile {
     padding: 0 1rem 0 1rem;
   }
+  @include desktop-large{
+    gap: 10rem
+  }
 }
 .cards {
   @include cards;
@@ -263,27 +266,32 @@ body {
       color: $blue-color;
     }
   }
+}
+.card-one {
+  @include mobile {
+    width: 100%;
   }
-  .card-one {
-    @include mobile {
-      width: 100%;
-    }
+}
+.card-two {
+  @include mobile {
+    display: none;
   }
-  .card-two {
-    @include mobile {
-      display: none;
-    }
+}
+.card-three {
+  @include mobile {
+    display: none;
   }
-  .card-three {
-    @include mobile {
-      display: none;
-    }
-  }
+}
 .div-card {
-  width: 60%;
+  width: 50%;
   margin: auto;
   @include mobile {
     display: none;
+  }
+  @include desktop-large{
+    width: 45%;
+    margin: auto;
+
   }
 }
 .cards-arrow {
@@ -312,77 +320,76 @@ body {
   margin-top: 5rem;
   padding-right: 180px;
   background-color: #fafafa;
-  @include desktop-small{
+  @include desktop-small {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
   }
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     margin-top: 0;
     text-align: left;
     padding: 0 1rem;
   }
   img {
-   @include mobile{
-    width: 100%;
-    max-width: 100%;
-   transform: scale(0.9);
-   transform-origin: center;
-   position: relative;
-    left: 0;
-   }
-   @include desktop-large{
-     width: 400px;
-   }
+    @include mobile {
+      width: 100%;
+      max-width: 100%;
+      transform: scale(0.9);
+      transform-origin: center;
+      position: relative;
+      left: 0;
+    }
+    @include desktop-large {
+      width: 400px;
+    }
   }
 }
 
-.section-two-div-two{
+.section-two-div-two {
   position: relative;
   right: 3rem;
-  @include mobile{
+  @include mobile {
     right: 0;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
-  @include desktop-large{
+  @include desktop-large {
     position: relative;
     right: 0;
     left: 3rem;
   }
-   h2{
-    @include desktop-large{
+  h2 {
+    @include desktop-large {
       font-size: 36px;
     }
   }
-   ul{
+  ul {
     @include div-ul;
-    @include desktop-small{
+    @include desktop-small {
       font-size: 14px;
     }
-    @include desktop-large{
+    @include desktop-large {
       // line-height: 22px;
       font-size: 16px;
     }
   }
-  ul li{
+  ul li {
     @include ul-li;
   }
 }
 
 .subscribe {
   @include subscribe;
-  @include desktop-large{
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    
+  @include desktop-large {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   }
 }
 hr {
-  @include mobile{
+  @include mobile {
     display: none;
   }
 }
-.section-three{
+.section-three {
   display: flex;
   justify-content: space-between;
   padding-left: 170px;
@@ -391,15 +398,44 @@ hr {
   margin-top: 3rem;
   width: 100%;
   height: 100%;
+  @include desktop-small {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    gap: 4rem;
+  }
   @include mobile {
     flex-direction: column;
     text-align: left;
     padding: 0 1rem;
     top: 30px;
+    gap: 0;
     background-color: #fafafa;
   }
-   img {
-    @include mobile{
+  .div-section-three {
+    @include mobile {
+      position: relative;
+      left: 0;
+      order: 1;
+      padding-bottom: 70px;
+    }
+  }
+  .div-section-three h2 {
+    @include desktop-large {
+      font-size: 36px;
+    }
+  }
+  .div-section-three ul {
+    @include div-ul;
+    @include desktop-large {
+      font-size: 16px;
+    }
+  }
+  .div-section-three ul li {
+    @include ul-li;
+  }
+  img {
+    @include mobile {
       width: 100%;
       position: relative;
       top: 5px;
@@ -407,60 +443,71 @@ hr {
       transform: scale(0.8);
       transform-origin: center;
     }
-    @include desktop-large{
-        width: 350px;
+    @include desktop-large {
+      width: 300px;
     }
   }
 }
-.div-section-three {
-  @include mobile{
-    position: relative;
-    left: 0;
-    order: 1;
-    padding-bottom: 50px;
-  }
-}
-.div-section-three ul{
-  @include div-ul;
-   
-}
-.div-section-three ul li{
-  @include ul-li;
-}
 
-.div-section-three h2 {
-  @include desktop-large{
-  font-size: 36px;
-}
-}
-.div-section-four ul,
-.div-section-five ul {
- @include div-ul;
-}
-// .div-section-three ul,
-// .div-section-four ul,
-// .div-section-five ul {
-//   line-height: 20px;
-// }
-
-
-.div-section-four ul li,
-.div-section-five ul li {
- @include ul-li;
-}
-  
-  .section-four,
-  .section-five {
-    @include desktop-small{
+.section-four {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 10px;
+  margin-top: 3rem;
+  @include desktop-small {
     display: flex;
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
   }
+  @include mobile {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 1rem;
+    background-color: #fafafa;
+    position: relative;
+    top: 60px;
+  }
+  img {
+    @include mobile {
+      width: 100%;
+      padding: 0 1rem;
+      position: relative;
+      top: 10px;
+      left: 0;
+      transform: scale(0.8);
+      transform-origin: center;
+    }
+    @include desktop-large {
+      width: 300px;
+    }
+  }
+  .div-section-four {
+    @include mobile {
+      position: relative;
+      right: 0;
+      padding-bottom: 70px;
+    }
+  }
+  .div-section-four h2 {
+    @include desktop-large {
+      font-size: 36px;
+    }
+  }
+  .div-section-four ul {
+    @include div-ul;
+    @include desktop-large {
+      font-size: 16px;
+    }
+  }
+  .div-section-four ul li {
+    @include ul-li;
+  }
 }
 
-.section-four,
 .section-five {
   display: flex;
   justify-content: space-between;
@@ -468,7 +515,68 @@ hr {
   padding-right: 170px;
   padding-top: 10px;
   margin-top: 3rem;
+  @include desktop-small {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+  }
+  @include mobile {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fafafa;
+    position: relative;
+    top: 100px;
+  }
+  .div-section-five {
+    @include mobile {
+      position: relative;
+      left: 0;
+      top: 10px;
+      order: 2;
+      padding-bottom: 50px;
+    }
+  }
+  .div-section-five h2 {
+    @include desktop-large {
+      font-size: 36px;
+    }
+  }
+
+  .div-section-five ul {
+    @include div-ul;
+    @include desktop-large {
+      font-size: 16px;
+    }
+  }
+  .div-section-five ul li {
+    @include ul-li;
+  }
+  img {
+    @include mobile{
+      width: 100%;
+      position: relative;
+      right: 0;
+      top: 10px;
+      transform: scale(0.8);
+      transform-origin: center;
+    }
+    @include desktop-large{
+      width: 400px;
+    }
+  }
 }
+
+// .div-section-three ul,
+// .div-section-four ul,
+// .div-section-five ul {
+//   line-height: 20px;
+// }
+
+
 .section-six {
   background: linear-gradient(180deg, #52b6ec 0%, rgba(82, 182, 236, 0) 100%);
 }
@@ -674,51 +782,17 @@ hr {
   //   transform: scale(0.8);
   //   transform-origin: center;
   // }
+
+  // .section-four {
+  //   flex-direction: column;
+  //   text-align: left;
+  //   padding: 0 1rem;
+  //   background-color: #fafafa;
+  //   position: relative;
+  //   top: 60px;
+  // }
+
   
-  .section-four {
-    flex-direction: column;
-    text-align: left;
-    padding: 0 1rem;
-    background-color: #fafafa;
-    position: relative;
-    top: 60px;
-  }
-  .div-section-four {
-    position: relative;
-    right: 0;
-  }
-  .section-four img {
-    width: 100%;
-    padding: 0 1rem;
-    position: relative;
-    top: 10px;
-    left: 0;
-    transform: scale(0.8);
-    transform-origin: center;
-  }
-  .section-five {
-    flex-direction: column;
-    text-align: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: #fafafa;
-    position: relative;
-    top: 100px;
-  }
-  .div-section-five {
-    position: relative;
-    left: 0;
-    top: 10px;
-    order: 2;
-  }
-  .section-five img {
-    width: 100%;
-    position: relative;
-    right: 0;
-    top: 10px;
-    transform: scale(0.8);
-    transform-origin: center;
-  }
   // hr {
   //   display: none;
   // }
@@ -829,29 +903,9 @@ hr {
   //   line-height: 22px;
   //   font-size: 16px;
   // }
+
   
-  
-  
-  .section-four img {
-    width: 330px;
-  }
-  .div-section-four h2 {
-    font-size: 36px;
-  }
-  .div-section-four ul {
-    line-height: 24px;
-    font-size: 16px;
-  }
-  .section-five img {
-    width: 450px;
-  }
-  .div-section-five h2 {
-    font-size: 36px;
-  }
-  .div-section-five ul {
-    line-height: 23px;
-    font-size: 16px;
-  }
+
   .section-six .section-six-text {
     font-size: 36px;
   }
