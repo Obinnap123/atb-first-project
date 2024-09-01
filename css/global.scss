@@ -20,7 +20,7 @@ body {
     padding: 1rem 1rem 0 1rem;
   }
   & .img-logo {
-    width: 100px;
+    width: 150px;
     min-width: 100px;
   }
   & .hamburger {
@@ -580,7 +580,7 @@ hr {
   @include mobile {
     flex-direction: column;
     background: #fafafa;
-   padding: 0;
+    padding: 0;
     padding-bottom: 120px;
   }
   .first-avatars {
@@ -588,21 +588,20 @@ hr {
     justify-content: space-between;
     padding-left: 190px;
     padding-right: 190px;
-    @include desktop-small{
+    @include desktop-small {
       padding-left: 150px;
-    padding-right: 150px;
+      padding-right: 150px;
     }
     @include mobile {
       flex-direction: column;
-      padding:  10px;
+      padding: 10px;
       width: 100%;
-      
     }
     .avatar-one {
       width: 25%;
       height: 10%;
       padding-top: 70px;
-      @include desktop-small{
+      @include desktop-small {
         padding-top: 50px;
       }
       @include mobile {
@@ -611,7 +610,7 @@ hr {
         width: 50%;
         // max-width: 100%;
       }
-      @include desktop-large{
+      @include desktop-large {
         padding-top: 80px;
       }
     }
@@ -619,7 +618,7 @@ hr {
       width: 25%;
       height: 10%;
       padding-top: 20px;
-      @include desktop-small{
+      @include desktop-small {
         padding-top: 20px;
       }
       @include mobile {
@@ -629,7 +628,7 @@ hr {
         top: 320px;
         left: 180px;
       }
-      @include desktop-large{
+      @include desktop-large {
         padding-top: 30px;
       }
     }
@@ -676,7 +675,7 @@ hr {
       color: #fafafa;
       font-size: 12px;
       @include mobile {
-        top: 360px;
+        top: 340px;
       }
       @include desktop-large {
         padding: 15px 45px 15px;
@@ -735,75 +734,142 @@ hr {
     }
   }
 }
-.what-do-we-sell{
-  background-color:#FF9900CC ;
+.what-do-we-sell {
+  background-color: #ff9900cc;
   color: $white;
-  .what-do-we-sell-text{
+  //  position: relative;
+  //  top: 2rem;
+  .what-do-we-sell-text {
     text-align: center;
-    h3{
+    h3 {
       font: {
         size: 36px;
       }
       padding-top: 64px;
     }
-    p{
+    p {
       font: {
         size: 18px;
-        weight:600;
+        weight: 600;
       }
       padding-top: 16px;
-      @include mobile{
+      @include mobile {
         width: 100%;
       }
     }
   }
-.languages-we-teach{
+  .languages-we-teach {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem 0 5rem;
+    font: {
+      size: 20px;
+      weight: 700;
+    }
+    line-height: 36px;
+    .second-paragraph {
+      text-align: center;
+    }
+    @include desktop-small {
+      font-size: 16px;
+    }
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .our-vitual-class {
+    text-align: center;
+    padding-top: 40px;
+    font: {
+      size: 20px;
+      weight: 700;
+    }
+    line-height: 36px;
+    padding-bottom: 100px;
+    @include desktop-small {
+      font-size: 16px;
+    }
+  }
+  a {
+    position: relative;
+    // left: 45%;
+    // transform: translate(-45%,0);
+    top: 32px;
+    font-size: 22px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #52b6ec;
+    border: 1px solid #52b6ec;
+    color: $black !important;
+    text-decoration: none;
+    border-radius: 7px;
+    // margin-bottom: 100px;
+  }
+}
+.ready {
   display: flex;
   justify-content: space-between;
-  padding:  2rem 5rem 0 5rem;
-  font: {
-    size: 20px;
-    weight:700;
+  padding: 2rem 5rem 3rem 5rem;
+  align-items: center;
+  h3 {
+    font: {
+      size: 36px;
+      weight: 700;
+    }
   }
-  line-height: 36px;
-  .second-paragraph{
-    text-align: center;
+  a {
+    padding: 0rem 2rem 1rem 2rem;
+    background-color: #52b6ec;
+    text-decoration: none;
+    border-radius: 10px;
+    color: $white;
+    &:visited {
+      color: $white;
+    }
+    &:hover {
+      color: $tertiary-color;
+    }
   }
-  @include desktop-small{
-   font-size: 16px;   
-  }
-  @include mobile{
-    flex-direction: column;
-    text-align: center;
+  img {
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-left: 20px;
   }
 }
-.our-vitual-class{
-  text-align: center;
-  padding-top: 40px;
-  font: {
-    size: 20px;
-    weight: 700;
+footer {
+  background-color: #52b6ec;
+  padding: 1rem 5rem 5rem 5rem;
+  .footer {
+    display: flex;
+    gap: 200px;
+    align-items: center;
   }
-  line-height: 36px;
-  padding-bottom: 100px;
-  @include desktop-small{
-    font-size: 16px;   
-   }
-}
-a{
-  position: relative;
-  // left: 45%;
-  // transform: translate(-45%,0);
-  top: 32px;
-font-size: 22px;
- padding: 12px 47px 12px;
-  background-color: #52B6EC;
-  border: 1px solid #52B6EC;
-  color: $black !important;
-  text-decoration: none;
-  border-radius: 7px;
-  // margin-bottom: 100px;
-}
+  ul {
+    list-style: none;
+    line-height: 32px;
+    padding-top: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  img {
+    width: 150px;
+    min-width: 100px;
+  }
+  // .boy {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  .socials {
+    display: flex;
+    justify-content: end;
+    padding-right: 230px;
+    align-items: center;
+  }
 }
 // @media only screen and (max-width: 1024px) {
 // .navbar {
