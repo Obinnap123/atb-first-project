@@ -1028,6 +1028,9 @@ footer img {
 footer .socials {
   display: flex;
   justify-content: end;
-  padding-right: 230px;
+  padding-right: 170px;
   align-items: center;
+  gap: 16px;
+  position: relative;
+  bottom: 20px;
 }/*# sourceMappingURL=global.css.map */
