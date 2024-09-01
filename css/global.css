@@ -745,6 +745,7 @@ body {
 .section-six .first-avatars .avatar-one {
   width: 25%;
   height: 10%;
+  padding-top: 70px;
 }
 @media (max-width: 1024px) {
   .section-six .first-avatars .avatar-one {
@@ -766,6 +767,7 @@ body {
 .section-six .first-avatars .avatar-two {
   width: 25%;
   height: 10%;
+  padding-top: 20px;
 }
 @media (max-width: 1024px) {
   .section-six .first-avatars .avatar-two {
@@ -901,4 +903,72 @@ body {
     top: 120px;
     padding-bottom: 60px;
   }
+}
+
+.what-do-we-sell {
+  background-color: rgba(255, 153, 0, 0.8);
+  color: white;
+}
+.what-do-we-sell .what-do-we-sell-text {
+  text-align: center;
+}
+.what-do-we-sell .what-do-we-sell-text h3 {
+  font-size: 36px;
+  padding-top: 64px;
+}
+.what-do-we-sell .what-do-we-sell-text p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 16px;
+}
+@media (max-width: 768px) {
+  .what-do-we-sell .what-do-we-sell-text p {
+    width: 100%;
+  }
+}
+.what-do-we-sell .languages-we-teach {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 0 5rem;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.what-do-we-sell .languages-we-teach .second-paragraph {
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .what-do-we-sell .languages-we-teach {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .what-do-we-sell .languages-we-teach {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.what-do-we-sell .our-vitual-class {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1024px) {
+  .what-do-we-sell .our-vitual-class {
+    font-size: 16px;
+  }
+}
+.what-do-we-sell a {
+  position: relative;
+  top: 32px;
+  font-size: 22px;
+  padding: 12px 47px 12px;
+  background-color: #52B6EC;
+  border: 1px solid #52B6EC;
+  color: black !important;
+  text-decoration: none;
+  border-radius: 7px;
 }/*# sourceMappingURL=global.css.map */

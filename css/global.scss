@@ -601,7 +601,7 @@ hr {
     .avatar-one {
       width: 25%;
       height: 10%;
-      // padding-top: 70px;
+      padding-top: 70px;
       @include desktop-small{
         padding-top: 50px;
       }
@@ -618,7 +618,7 @@ hr {
     .avatar-two {
       width: 25%;
       height: 10%;
-      // padding-top: 20px;
+      padding-top: 20px;
       @include desktop-small{
         padding-top: 20px;
       }
@@ -735,7 +735,76 @@ hr {
     }
   }
 }
-
+.what-do-we-sell{
+  background-color:#FF9900CC ;
+  color: $white;
+  .what-do-we-sell-text{
+    text-align: center;
+    h3{
+      font: {
+        size: 36px;
+      }
+      padding-top: 64px;
+    }
+    p{
+      font: {
+        size: 18px;
+        weight:600;
+      }
+      padding-top: 16px;
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+.languages-we-teach{
+  display: flex;
+  justify-content: space-between;
+  padding:  2rem 5rem 0 5rem;
+  font: {
+    size: 20px;
+    weight:700;
+  }
+  line-height: 36px;
+  .second-paragraph{
+    text-align: center;
+  }
+  @include desktop-small{
+   font-size: 16px;   
+  }
+  @include mobile{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.our-vitual-class{
+  text-align: center;
+  padding-top: 40px;
+  font: {
+    size: 20px;
+    weight: 700;
+  }
+  line-height: 36px;
+  padding-bottom: 100px;
+  @include desktop-small{
+    font-size: 16px;   
+   }
+}
+a{
+  position: relative;
+  // left: 45%;
+  // transform: translate(-45%,0);
+  top: 32px;
+font-size: 22px;
+ padding: 12px 47px 12px;
+  background-color: #52B6EC;
+  border: 1px solid #52B6EC;
+  color: $black !important;
+  text-decoration: none;
+  border-radius: 7px;
+  // margin-bottom: 100px;
+}
+}
 // @media only screen and (max-width: 1024px) {
 // .navbar {
 //   padding: 1rem 2rem 0 2rem;
