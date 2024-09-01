@@ -715,26 +715,77 @@ body {
 .section-six {
   background: linear-gradient(180deg, #52b6ec 0%, rgba(82, 182, 236, 0) 100%);
 }
-
-.first-avatars {
+@media (max-width: 768px) {
+  .section-six {
+    flex-direction: column;
+    background: #fafafa;
+    padding: 0;
+    padding-bottom: 120px;
+  }
+}
+.section-six .first-avatars {
   display: flex;
   justify-content: space-between;
   padding-left: 190px;
   padding-right: 190px;
 }
-
-.section-six .avatar-one {
+@media (max-width: 1024px) {
+  .section-six .first-avatars {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .section-six .first-avatars {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+}
+.section-six .first-avatars .avatar-one {
   width: 25%;
   height: 10%;
-  padding-top: 70px;
 }
-
-.section-six .avatar-two {
+@media (max-width: 1024px) {
+  .section-six .first-avatars .avatar-one {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .section-six .first-avatars .avatar-one {
+    position: relative;
+    top: 380px;
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .section-six .first-avatars .avatar-one {
+    padding-top: 80px;
+  }
+}
+.section-six .first-avatars .avatar-two {
   width: 25%;
   height: 10%;
-  padding-top: 20px;
 }
-
+@media (max-width: 1024px) {
+  .section-six .first-avatars .avatar-two {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .section-six .first-avatars .avatar-two {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: 320px;
+    left: 180px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-six .first-avatars .avatar-two {
+    padding-top: 30px;
+  }
+}
 .section-six .section-six-text {
   text-align: center;
   position: relative;
@@ -742,15 +793,41 @@ body {
   font-size: 36px;
   /* right: 100px; */
 }
-
+@media (max-width: 1024px) {
+  .section-six .section-six-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .section-six .section-six-text {
+    order: 1;
+    top: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .section-six .section-six-text {
+    font-size: 36px;
+  }
+}
 .section-six .section-six-text p {
   width: 60ch;
   margin: auto;
   font-size: 16px;
   padding-top: 20px;
 }
-
-.section-six-text a {
+@media (max-width: 768px) {
+  .section-six .section-six-text p {
+    width: 70%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .section-six .section-six-text p {
+    font-size: 16px;
+  }
+}
+.section-six .section-six-text a {
   position: relative;
   top: 35px;
   border: 1px solid #ff9900;
@@ -760,27 +837,55 @@ body {
   color: #fafafa;
   font-size: 12px;
 }
-
-.second-avatars {
+@media (max-width: 768px) {
+  .section-six .section-six-text a {
+    top: 360px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-six .section-six-text a {
+    padding: 15px 45px 15px;
+  }
+}
+.section-six .second-avatars {
   display: flex;
   justify-content: space-between;
   padding-left: 190px;
   padding-right: 190px;
 }
-
-.second-avatars .avatar-three {
+@media (max-width: 768px) {
+  .section-six .second-avatars {
+    padding: 10px;
+    width: 100%;
+  }
+}
+.section-six .second-avatars .avatar-three {
   width: 25%;
   height: 10%;
 }
-
-.second-avatars .avatar-four {
+@media (max-width: 768px) {
+  .section-six .second-avatars .avatar-three {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: 60px;
+  }
+}
+.section-six .second-avatars .avatar-four {
   width: 25%;
   height: 10%;
   position: relative;
   top: -20px;
 }
-
-.third-avatars .avatar-fifth {
+@media (max-width: 768px) {
+  .section-six .second-avatars .avatar-four {
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: 130px;
+  }
+}
+.section-six .third-avatars .avatar-fifth {
   width: 20%;
   height: 10%;
   position: relative;
@@ -788,89 +893,12 @@ body {
   transform: translate(-50%, 0);
   top: -30px;
 }
-
-@media only screen and (max-width: 1024px) {
-  .section-six .section-six-text {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .first-avatars {
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
-  }
-  .second-avatars {
-    padding: 10px;
-    width: 100%;
-  }
-  .section-six .avatar-one {
-    position: relative;
-    top: 350px;
-    width: 50%;
-  }
-  .section-six .avatar-two {
+@media (max-width: 768px) {
+  .section-six .third-avatars .avatar-fifth {
     width: 50%;
     height: 10%;
     position: relative;
-    top: 300px;
-    left: 180px;
-  }
-  .second-avatars .avatar-three {
-    width: 50%;
-    height: 10%;
-    position: relative;
-    top: 30px;
-  }
-  .second-avatars .avatar-four {
-    width: 50%;
-    height: 10%;
-    position: relative;
-    top: 80px;
-  }
-  .section-six a {
-    top: 400px;
-  }
-  .third-avatars .avatar-fifth {
-    width: 50%;
-    height: 10%;
-    position: relative;
-    top: 80px;
-  }
-  .section-six {
-    flex-direction: column;
-    background: #fafafa;
-  }
-  .section-six-text {
-    order: 1;
-    top: 0;
-    width: 100%;
-  }
-  .section-six .section-six-text p {
-    width: 70%;
-    max-width: 100%;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .main-section-one h2 {
-    font-size: 37px;
-  }
-  .main-section-one p {
-    font-size: 22px;
-  }
-  .cards p {
-    font-size: 16px;
-  }
-  .subscription-heading {
-    font-size: 37px;
-  }
-  .section-six .section-six-text {
-    font-size: 36px;
-  }
-  .section-six .section-six-text p {
-    font-size: 16px;
-  }
-  .section-six a {
-    padding: 15px 45px 15px;
+    top: 120px;
+    padding-bottom: 60px;
   }
 }/*# sourceMappingURL=global.css.map */
