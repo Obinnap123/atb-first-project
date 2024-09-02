@@ -818,8 +818,10 @@ hr {
       color: $tertiary-color;
     }
     @include mobile {
+      text-align: end;
       margin-top: 20px;
       margin-right: 45px;
+      padding: 0.5rem 1rem 1rem 0.5rem;
     }
   }
   img {
