@@ -45,7 +45,7 @@ body {
 }
 .navbar .navbar-ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-bottom: 10px;
@@ -53,6 +53,16 @@ body {
   font-size: 1rem;
   margin-top: 10px;
   list-style-type: none;
+}
+@media (max-width: 1024px) {
+  .navbar .navbar-ul {
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navbar-ul {
+    display: none !important;
+  }
 }
 .navbar .navbar-ul li a {
   color: black;
@@ -64,19 +74,19 @@ body {
 .navbar .navbar-ul li a:hover {
   color: grey;
 }
-@media (max-width: 768px) {
-  .navbar .navbar-ul {
-    display: none !important;
-  }
-}
-@media (max-width: 1024px) {
-  .navbar .navbar-ul {
-    gap: 2.5rem;
-  }
-}
 .navbar .navbar-div {
   display: flex;
   gap: 5rem;
+}
+@media (max-width: 1024px) {
+  .navbar .navbar-div {
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navbar-div {
+    display: none;
+  }
 }
 .navbar .navbar-div .sign-in {
   border-radius: 8px;
@@ -103,16 +113,6 @@ body {
 }
 .navbar .navbar-div .login:hover {
   color: grey !important;
-}
-@media (max-width: 1024px) {
-  .navbar .navbar-div {
-    gap: 3rem;
-  }
-}
-@media (max-width: 768px) {
-  .navbar .navbar-div {
-    display: none;
-  }
 }
 
 .img-hamburger {
@@ -1034,7 +1034,7 @@ footer {
 }
 footer .footer {
   display: flex;
-  gap: 250px;
+  gap: 200px;
   align-items: center;
 }
 @media (max-width: 1024px) {
@@ -1047,6 +1047,11 @@ footer .footer {
     flex-direction: column;
     gap: 28px;
     align-items: start;
+  }
+}
+@media (min-width: 1440px) {
+  footer .footer {
+    gap: 250px;
   }
 }
 footer .footer img {
@@ -1075,8 +1080,8 @@ footer .socials {
   align-items: center;
   gap: 16px;
   position: relative;
-  bottom: 20px;
-  left: 70px;
+  bottom: 30px;
+  left: 150px;
   color: white;
 }
 @media (max-width: 1024px) {
@@ -1090,5 +1095,10 @@ footer .socials {
   footer .socials {
     top: 30px;
     right: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  footer .socials {
+    left: 70px;
   }
 }/*# sourceMappingURL=global.css.map */

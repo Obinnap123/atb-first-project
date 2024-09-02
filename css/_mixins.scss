@@ -1,13 +1,13 @@
 @mixin flex($direction: row, $justify: space-between, $align: center) {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
   flex-direction: $direction;
   @content;
 }
 @mixin auth {
   border-radius: 8px;
-  border: #52b6ec solid 1px;
+  border: $primary-color solid 1px;
   text-decoration: none;
   padding: 8px 20px 8px 20px;
   margin-bottom: 10px;
@@ -28,7 +28,7 @@
 }
 @mixin subscribe{
     margin-left: 2rem;
-    border: #ff9900 solid 1px;
+    border: $secondaryBG solid 1px;
     position: relative;
     top: 20px;
     bottom: 30px;
@@ -37,13 +37,13 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    background-color: #ff9900;
+    background-color: $secondaryBG;
 }
 @mixin join-now-button{
   display: flex;
     align-items: center;
     padding: 1rem 1rem 1rem 1rem;
-    background-color: #ff9900;
+    background-color: $secondaryBG;
     border: none;
     color: white;
     font-size: 1rem;
@@ -55,7 +55,7 @@
     height: fit-content;
     margin-bottom: 3rem;
     padding: 22px;
-    background-color: white;
+    background-color: $white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
   
