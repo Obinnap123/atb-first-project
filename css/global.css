@@ -30,7 +30,7 @@ body {
   }
 }
 .navbar .img-logo {
-  width: 150px;
+  width: 100px;
   min-width: 100px;
 }
 .navbar .hamburger {
@@ -924,6 +924,7 @@ body {
 @media (max-width: 768px) {
   .what-do-we-sell .what-do-we-sell-text p {
     width: 100%;
+    padding: 0px 4px;
   }
 }
 .what-do-we-sell .languages-we-teach {
@@ -979,9 +980,22 @@ body {
   padding: 2rem 5rem 3rem 5rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .ready {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .ready h3 {
   font-size: 36px;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .ready h3 {
+    font-size: 24px;
+    width: 100%;
+  }
 }
 .ready a {
   padding: 0rem 2rem 1rem 2rem;
@@ -996,6 +1010,12 @@ body {
 .ready a:hover {
   color: grey;
 }
+@media (max-width: 768px) {
+  .ready a {
+    margin-top: 20px;
+    margin-right: 45px;
+  }
+}
 .ready img {
   width: 20%;
   padding-top: 10px;
@@ -1007,23 +1027,46 @@ footer {
   background-color: #52b6ec;
   padding: 1rem 5rem 5rem 5rem;
 }
+@media (max-width: 768px) {
+  footer {
+    padding-left: 1rem;
+  }
+}
 footer .footer {
   display: flex;
-  gap: 200px;
+  gap: 250px;
   align-items: center;
 }
-footer ul {
-  list-style: none;
-  line-height: 32px;
-  padding-top: 50px;
+@media (max-width: 1024px) {
+  footer .footer {
+    gap: 150px;
+  }
 }
-footer a {
+@media (max-width: 768px) {
+  footer .footer {
+    flex-direction: column;
+    gap: 28px;
+    align-items: start;
+  }
+}
+footer .footer img {
+  width: 250px;
+  min-width: 100px;
+}
+@media (max-width: 1024px) {
+  footer .footer img {
+    width: 200px;
+  }
+}
+footer .footer ul {
+  list-style: none;
+  line-height: 49px;
+  padding-top: 50px;
+  font-size: 18px;
+}
+footer .footer a {
   text-decoration: none;
   color: white;
-}
-footer img {
-  width: 150px;
-  min-width: 100px;
 }
 footer .socials {
   display: flex;
@@ -1033,4 +1076,19 @@ footer .socials {
   gap: 16px;
   position: relative;
   bottom: 20px;
+  left: 70px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  footer .socials {
+    padding-right: 0px;
+    left: 20px;
+    bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  footer .socials {
+    top: 30px;
+    right: 20px;
+  }
 }/*# sourceMappingURL=global.css.map */
