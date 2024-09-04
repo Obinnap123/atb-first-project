@@ -590,7 +590,6 @@ body {
     padding: 0 1rem;
     background-color: #fafafa;
     position: relative;
-    top: 60px;
   }
 }
 @media (max-width: 768px) {
@@ -663,7 +662,6 @@ body {
     padding-right: 1rem;
     background-color: #fafafa;
     position: relative;
-    top: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -718,7 +716,7 @@ body {
 @media (max-width: 768px) {
   .section-six {
     flex-direction: column;
-    background: #fafafa;
+    background: linear-gradient(180deg, #52b6ec 0%, rgba(82, 182, 236, 0) 100%);
     padding: 0;
     padding-bottom: 120px;
   }
@@ -738,8 +736,6 @@ body {
 @media (max-width: 768px) {
   .section-six .first-avatars {
     flex-direction: column;
-    padding: 10px;
-    width: 100%;
   }
 }
 .section-six .first-avatars .avatar-one {
@@ -755,8 +751,9 @@ body {
 @media (max-width: 768px) {
   .section-six .first-avatars .avatar-one {
     position: relative;
-    top: 380px;
-    width: 50%;
+    top: 280px;
+    width: 180%;
+    right: 140px;
   }
 }
 @media (min-width: 1440px) {
@@ -803,7 +800,6 @@ body {
 @media (max-width: 768px) {
   .section-six .section-six-text {
     order: 1;
-    top: 0;
     width: 100%;
   }
 }
@@ -909,6 +905,11 @@ body {
   background-color: rgba(255, 153, 0, 0.8);
   color: white;
 }
+@media (max-width: 768px) {
+  .what-do-we-sell {
+    color: black;
+  }
+}
 .what-do-we-sell .what-do-we-sell-text {
   text-align: center;
 }
@@ -924,7 +925,7 @@ body {
 @media (max-width: 768px) {
   .what-do-we-sell .what-do-we-sell-text p {
     width: 100%;
-    padding: 0px 4px;
+    padding: 0px 10px;
   }
 }
 .what-do-we-sell .languages-we-teach {
@@ -995,10 +996,13 @@ body {
   .ready h3 {
     font-size: 24px;
     width: 100%;
+    text-wrap: nowrap;
   }
 }
 .ready a {
-  padding: 0rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 2rem 1rem 2rem;
   background-color: #52b6ec;
   text-decoration: none;
   border-radius: 10px;
@@ -1015,8 +1019,11 @@ body {
     text-align: end;
     margin-top: 20px;
     margin-right: 45px;
-    padding: 0.5rem 1rem 1rem 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
   }
+}
+.ready span {
+  padding-top: 10px;
 }
 .ready img {
   width: 20%;
@@ -1095,8 +1102,8 @@ footer .socials {
 }
 @media (max-width: 768px) {
   footer .socials {
+    justify-content: start;
     top: 30px;
-    right: 20px;
   }
 }
 @media (min-width: 1440px) {

@@ -58,7 +58,7 @@ body {
   & .navbar-div {
     display: flex;
     gap: 5rem;
-    
+
     @include desktop-small {
       gap: 3rem;
     }
@@ -444,7 +444,7 @@ hr {
     padding: 0 1rem;
     background-color: #fafafa;
     position: relative;
-    top: 60px;
+    // top: 60px;
   }
   img {
     @include mobile {
@@ -504,7 +504,7 @@ hr {
     padding-right: 1rem;
     background-color: #fafafa;
     position: relative;
-    top: 100px;
+    // top: 50px;
   }
   .div-section-five {
     @include mobile {
@@ -555,7 +555,7 @@ hr {
   background: $tertiaryBG;
   @include mobile {
     flex-direction: column;
-    background: $primaryBG;
+    background: $tertiaryBG;
     padding: 0;
     padding-bottom: 120px;
   }
@@ -570,8 +570,8 @@ hr {
     }
     @include mobile {
       flex-direction: column;
-      padding: 10px;
-      width: 100%;
+      // padding: 10px;
+      // width: 100%;
     }
     .avatar-one {
       width: 25%;
@@ -582,8 +582,10 @@ hr {
       }
       @include mobile {
         position: relative;
-        top: 380px;
-        width: 50%;
+        top: 280px;
+        width: 180%;
+        right: 140px;
+        // max-width: 100%;
         // max-width: 100%;
       }
       @include desktop-large {
@@ -621,7 +623,8 @@ hr {
     }
     @include mobile {
       order: 1;
-      top: 0;
+      // top: -80;
+      // padding-top: 0px;
       width: 100%;
       // width: 70%;
     }
@@ -713,6 +716,9 @@ hr {
 .what-do-we-sell {
   background-color: #ff9900cc;
   color: $white;
+  @include mobile {
+    color: $black;
+  }
   //  position: relative;
   //  top: 2rem;
   .what-do-we-sell-text {
@@ -731,7 +737,7 @@ hr {
       padding-top: 16px;
       @include mobile {
         width: 100%;
-        padding: 0px 4px;
+        padding: 0px 10px;
       }
     }
   }
@@ -803,10 +809,13 @@ hr {
         size: 24px;
       }
       width: 100%;
+      text-wrap: nowrap;
     }
   }
   a {
-    padding: 0rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 2rem 1rem 2rem;
     background-color: $primary-color;
     text-decoration: none;
     border-radius: 10px;
@@ -821,8 +830,11 @@ hr {
       text-align: end;
       margin-top: 20px;
       margin-right: 45px;
-      padding: 0.5rem 1rem 1rem 0.5rem;
+      padding: 0.5rem 1rem 1rem 1rem;
     }
+  }
+  span {
+    padding-top: 10px;
   }
   img {
     width: 20%;
@@ -889,8 +901,9 @@ footer {
       bottom: 25px;
     }
     @include mobile {
+      justify-content: start;
       top: 30px;
-      right: 20px;
+      // right: 20px;
     }
     @include desktop-large {
       left: 70px;
