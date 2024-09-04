@@ -11,6 +11,28 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -499,9 +521,10 @@ body {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
+  background-color: #fafafa;
 }
 @media (max-width: 1024px) {
   .section-three {
@@ -572,7 +595,8 @@ body {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  background-color: #fafafa;
 }
 @media (max-width: 1024px) {
   .section-four {
@@ -643,7 +667,8 @@ body {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  background-color: #fafafa;
 }
 @media (max-width: 1024px) {
   .section-five {
@@ -736,6 +761,7 @@ body {
 @media (max-width: 768px) {
   .section-six .first-avatars {
     flex-direction: column;
+    padding: 0px 10px;
   }
 }
 .section-six .first-avatars .avatar-one {
@@ -751,9 +777,9 @@ body {
 @media (max-width: 768px) {
   .section-six .first-avatars .avatar-one {
     position: relative;
-    top: 280px;
-    width: 180%;
-    right: 140px;
+    top: 310px;
+    width: 50%;
+    height: 10%;
   }
 }
 @media (min-width: 1440px) {
@@ -773,11 +799,11 @@ body {
 }
 @media (max-width: 768px) {
   .section-six .first-avatars .avatar-two {
-    width: 50%;
-    height: 10%;
     position: relative;
-    top: 320px;
+    top: 270px;
     left: 180px;
+    width: 50%;
+    height: 5%;
   }
 }
 @media (min-width: 1440px) {
@@ -800,6 +826,7 @@ body {
 @media (max-width: 768px) {
   .section-six .section-six-text {
     order: 1;
+    top: -80;
     width: 100%;
   }
 }
@@ -837,7 +864,7 @@ body {
 }
 @media (max-width: 768px) {
   .section-six .section-six-text a {
-    top: 340px;
+    top: 370px;
   }
 }
 @media (min-width: 1440px) {
@@ -866,7 +893,7 @@ body {
     width: 50%;
     height: 10%;
     position: relative;
-    top: 60px;
+    top: 20px;
   }
 }
 .section-six .second-avatars .avatar-four {
@@ -880,7 +907,7 @@ body {
     width: 50%;
     height: 10%;
     position: relative;
-    top: 130px;
+    top: 100px;
   }
 }
 .section-six .third-avatars .avatar-fifth {
@@ -896,7 +923,7 @@ body {
     width: 50%;
     height: 10%;
     position: relative;
-    top: 120px;
+    top: 90px;
     padding-bottom: 60px;
   }
 }
@@ -994,9 +1021,10 @@ body {
 }
 @media (max-width: 768px) {
   .ready h3 {
-    font-size: 24px;
+    font-size: 22px;
     width: 100%;
     text-wrap: nowrap;
+    padding: 0px 10px;
   }
 }
 .ready a {
@@ -1096,8 +1124,7 @@ footer .socials {
 @media (max-width: 1024px) {
   footer .socials {
     padding-right: 0px;
-    left: 20px;
-    bottom: 25px;
+    left: 40px;
   }
 }
 @media (max-width: 768px) {

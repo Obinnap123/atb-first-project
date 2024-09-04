@@ -8,6 +8,21 @@ body {
     size: $font-size;
   }
 }
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include desktop-small {
+    padding: 0;
+  }
+  @include mobile {
+    padding: 0;
+  }
+  @include desktop-large {
+    padding: 0;
+  }
+}
 .navbar {
   @include flex;
   padding: 1rem 5rem 0 5rem;
@@ -295,7 +310,7 @@ body {
   padding-left: 180px;
   margin-top: 5rem;
   padding-right: 180px;
-  background-color: #fafafa;
+  background-color: $primaryBG;
   @include desktop-small {
     padding-left: 80px;
     padding-right: 80px;
@@ -370,9 +385,10 @@ hr {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
+  background-color: $primaryBG;
   @include desktop-small {
     padding-left: 80px;
     padding-right: 80px;
@@ -385,7 +401,7 @@ hr {
     padding: 0 1rem;
     top: 30px;
     gap: 0;
-    background-color: #fafafa;
+    background-color: $primaryBG;
   }
   .div-section-three {
     @include mobile {
@@ -430,7 +446,8 @@ hr {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  background-color: $primaryBG;
   @include desktop-small {
     display: flex;
     justify-content: $justify;
@@ -442,7 +459,7 @@ hr {
     flex-direction: column;
     text-align: left;
     padding: 0 1rem;
-    background-color: #fafafa;
+    background-color: $primaryBG;
     position: relative;
     // top: 60px;
   }
@@ -489,7 +506,8 @@ hr {
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  background-color: $primaryBG;
   @include desktop-small {
     display: flex;
     justify-content: $justify;
@@ -502,7 +520,7 @@ hr {
     text-align: left;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: #fafafa;
+    background-color: $primaryBG;
     position: relative;
     // top: 50px;
   }
@@ -570,6 +588,7 @@ hr {
     }
     @include mobile {
       flex-direction: column;
+      padding: 0px 10px;
       // padding: 10px;
       // width: 100%;
     }
@@ -582,9 +601,9 @@ hr {
       }
       @include mobile {
         position: relative;
-        top: 280px;
-        width: 180%;
-        right: 140px;
+        top: 310px;
+        width: 50%;
+        height: 10%;
         // max-width: 100%;
         // max-width: 100%;
       }
@@ -600,11 +619,12 @@ hr {
         padding-top: 20px;
       }
       @include mobile {
-        width: 50%;
-        height: 10%;
         position: relative;
-        top: 320px;
+        // right: 200px;
+        top: 270px;
         left: 180px;
+        width: 50%;
+        height: 5%;
       }
       @include desktop-large {
         padding-top: 30px;
@@ -623,8 +643,8 @@ hr {
     }
     @include mobile {
       order: 1;
-      // top: -80;
-      // padding-top: 0px;
+      top: -80;
+      // padding-bottom: 50px;
       width: 100%;
       // width: 70%;
     }
@@ -651,10 +671,10 @@ hr {
       padding: 8px 30px 8px;
       text-decoration: none;
       background-color: $secondaryBG;
-      color: #fafafa;
+      color: $primaryBG;
       font-size: 12px;
       @include mobile {
-        top: 340px;
+        top: 370px;
       }
       @include desktop-large {
         padding: 15px 45px 15px;
@@ -678,7 +698,7 @@ hr {
         width: 50%;
         height: 10%;
         position: relative;
-        top: 60px;
+        top: 20px;
         // left: 150px;
       }
     }
@@ -689,10 +709,9 @@ hr {
       top: -20px;
       @include mobile {
         width: 50%;
-        // max-width: 100%;
         height: 10%;
         position: relative;
-        top: 130px;
+        top: 100px;
       }
     }
   }
@@ -708,7 +727,7 @@ hr {
       width: 50%;
       height: 10%;
       position: relative;
-      top: 120px;
+      top: 90px;
       padding-bottom: 60px;
     }
   }
@@ -806,10 +825,11 @@ hr {
     }
     @include mobile {
       font: {
-        size: 24px;
+        size: 22px;
       }
       width: 100%;
       text-wrap: nowrap;
+      padding: 0px 10px;
     }
   }
   a {
@@ -897,8 +917,8 @@ footer {
     color: $white;
     @include desktop-small {
       padding-right: 0px;
-      left: 20px;
-      bottom: 25px;
+      left: 40px;
+      // bottom: 25px;
     }
     @include mobile {
       justify-content: start;
@@ -910,205 +930,3 @@ footer {
     }
   }
 }
-// @media only screen and (max-width: 1024px) {
-// .navbar {
-//   padding: 1rem 2rem 0 2rem;
-//   justify-content: space-between;
-// }
-// .header-hero-one {
-//   padding: 1rem 2rem 0 2rem;
-//   margin-top: 0;
-//   position: relative;
-//   top: 100px;
-// }
-// .join-now-button {
-//   margin-top: 2rem;
-// }
-// .figure-img {
-//   width: 400px;
-// }
-// .navbar ul {
-//   gap: 2rem;
-// }
-// .cards-section {
-//   gap: 3rem;
-//   margin-left: 0;
-//   padding: 0;
-// }
-// .div-section-two,
-// .section-three,
-// .section-four,
-// .section-five {
-//   display: flex;
-//   justify-content: space-between;
-//   padding-left: 80px;
-//   padding-right: 80px;
-//   padding-top: 10px;
-// }
-
-// @media screen and (max-width: 768px) {
-// .navbar {
-//   padding: 1rem 1rem 0 1rem;
-// }
-// .navbar-ul {
-//   display: none !important ;
-// }
-// .hamburger {
-//   display: block;
-// }
-// .header-hero {
-//   flex-direction: column;
-// }
-// .figure-img {
-//   display: none;
-// }
-// .figure-img-two {
-//   display: block;
-//   width: 100%;
-//   margin-top: 2rem;
-// }
-// .navbar-div {
-//   display: none;
-// }
-// .header-hero-one {
-//   padding: 1rem 1rem 0 1rem;
-//   position: relative;
-//   top: 0;
-// }
-// .header-hero-one p {
-//   width: 39ch;
-// }
-// .join-now-button {
-//   border-radius: 13px;
-//   padding: 1.2rem 2.5rem 1.2rem 1rem;
-// }
-// .main-section-one p {
-//   width: 100%;
-//   padding: 0 1rem 0 1rem;
-//   text-align: left;
-//   font-size: 1rem;
-// }
-// .main-section-one {
-//   margin-top: 1rem;
-//   background-color: transparent;
-// }
-// .card-two {
-//   display: none;
-// }
-// .card-three {
-//   display: none;
-// }
-// .div-card {
-//   display: none;
-// }
-// .cards-section {
-//   padding: 0 1rem 0 1rem;
-// }
-// .card-one {
-//   width: 100%;
-// }
-// .subscription-heading {
-//   width: 100%;
-//   text-align: center;
-//   font-size: 2.5rem;
-// }
-// .div-section-two img {
-//   width: 100%;
-//   transform: scale(0.8);
-//   transform-origin: center;
-//   position: relative;
-//   left: 0;
-// }
-// .div-section-two {
-//   flex-direction: column;
-//   margin-top: 0;
-//   padding: 0;
-//   text-align: left;
-//   padding: 0 1rem;
-// }
-// .section-two-div-two {
-//   right: 0;
-// }
-// .section-three {
-//   flex-direction: column;
-//   text-align: left;
-//   padding: 0 1rem;
-//   top: 30px;
-//   background-color: #fafafa;
-// }
-// .section-three img {
-//   width: 100%;
-//   position: relative;
-//   top: 5px;
-//   right: 0;
-//   transform: scale(0.8);
-//   transform-origin: center;
-// }
-
-// .section-four {
-//   flex-direction: column;
-//   text-align: left;
-//   padding: 0 1rem;
-//   background-color: #fafafa;
-//   position: relative;
-//   top: 60px;
-// }
-
-// hr {
-//   display: none;
-// }
-
-// height: 10%;
-// padding-top: 70px;
-
-// .section-six{
-//   display: none;
-// width: 70%;
-// }
-
-// @media only screen and (min-width: 1440px) {
-//   .main-section-one h2 {
-//     font-size: 37px;
-//   }
-//   .main-section-one p {
-//     font-size: 22px;
-//   }
-//   .cards p {
-//     font-size: 16px;
-//   }
-//   .subscription-heading {
-//     font-size: 37px;
-//   }
-// .header-hero-one {
-//   font-size: 1.5rem;
-// }
-// .subscribe {
-//   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-// }
-// .section-two-div-two h2 {
-//   font-size: 36px;
-// }
-// .div-section-two img {
-//   width: 400px;
-// }
-
-// .section-two-div-two {
-//   position: relative;
-//   right: 0;
-//   left: 3rem;
-// }
-// .section-two-div-two ul {
-//   line-height: 22px;
-//   font-size: 16px;
-// }
-
-// @media screen and (max-width: 400px) {
-//   .navbar {
-//     padding: 1rem 1rem 0 2rem;
-// h1{
-//   margin: 2px;
-//   padding: auto;
-
-// }
-//   }
-// }
