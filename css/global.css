@@ -33,6 +33,10 @@ body {
   }
 }
 
+img {
+  display: block;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -186,6 +190,9 @@ body {
 .header-hero .header-hero-one p {
   margin-top: 1rem;
   width: 50ch;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
 }
 @media (max-width: 768px) {
   .header-hero .header-hero-one p {
@@ -252,7 +259,6 @@ body {
 }
 
 .main-section-one {
-  margin-top: 7rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -292,13 +298,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 7rem;
-  padding: 0rem 5rem 0 5rem;
+  padding: 3rem 5rem 0 5rem;
 }
 @media (max-width: 1024px) {
   .cards-section {
     gap: 3rem;
     margin-left: 0;
-    padding: 0;
   }
 }
 @media (max-width: 768px) {
@@ -397,7 +402,7 @@ body {
   .subscription-heading {
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1440px) {
@@ -449,6 +454,8 @@ body {
 .section-two-div-two {
   position: relative;
   right: 3rem;
+  top: 20px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .section-two-div-two {
@@ -544,6 +551,10 @@ body {
     background-color: #fafafa;
   }
 }
+.section-three .div-section-three {
+  padding-top: 20px;
+  position: relative;
+}
 @media (max-width: 768px) {
   .section-three .div-section-three {
     position: relative;
@@ -632,11 +643,19 @@ body {
     width: 300px;
   }
 }
+.section-four .div-section-four {
+  padding-top: 20px;
+}
 @media (max-width: 768px) {
   .section-four .div-section-four {
     position: relative;
     right: 0;
     padding-bottom: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-four .div-section-four {
+    position: relative;
   }
 }
 @media (min-width: 1440px) {
@@ -688,6 +707,9 @@ body {
     background-color: #fafafa;
     position: relative;
   }
+}
+.section-five .div-section-five {
+  padding-top: 20px;
 }
 @media (max-width: 768px) {
   .section-five .div-section-five {
@@ -1082,7 +1104,7 @@ footer .footer {
 @media (max-width: 768px) {
   footer .footer {
     flex-direction: column;
-    gap: 28px;
+    gap: 18px;
     align-items: start;
   }
 }
@@ -1131,6 +1153,7 @@ footer .socials {
   footer .socials {
     justify-content: start;
     top: 30px;
+    left: 0;
   }
 }
 @media (min-width: 1440px) {

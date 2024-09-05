@@ -23,6 +23,9 @@ body {
     padding: 0;
   }
 }
+img{
+  display:block;
+}
 .navbar {
   @include flex;
   padding: 1rem 5rem 0 5rem;
@@ -137,6 +140,11 @@ body {
   .header-hero-one p {
     margin-top: 1rem;
     width: 50ch;
+    font: {
+      size: 14px;
+      weight: 300;
+    }
+    line-height: 20px;
     @include mobile {
       width: 39ch;
     }
@@ -183,7 +191,7 @@ body {
 }
 
 .main-section-one {
-  margin-top: 7rem;
+  // margin-top: 7rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -216,11 +224,11 @@ body {
   display: flex;
   justify-content: center;
   gap: 7rem;
-  padding: 0rem 5rem 0 5rem;
+  padding: 3rem 5rem 0 5rem;
   @include desktop-small {
     gap: 3rem;
     margin-left: 0;
-    padding: 0;
+    // padding: 0;
   }
   @include mobile {
     padding: 0 1rem 0 1rem;
@@ -296,7 +304,7 @@ body {
   @include mobile {
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   @include desktop-large {
     font-size: 37px;
@@ -340,6 +348,8 @@ body {
 .section-two-div-two {
   position: relative;
   right: 3rem;
+  top: 20px;
+  overflow: hidden;
   @include mobile {
     right: 0;
     padding-bottom: 70px;
@@ -348,6 +358,7 @@ body {
     position: relative;
     right: 0;
     left: 3rem;
+  //  padding-top: 1.5rem;
   }
   h2 {
     @include desktop-large {
@@ -404,11 +415,17 @@ hr {
     background-color: $primaryBG;
   }
   .div-section-three {
+    padding-top: 20px;
+    position: relative;
     @include mobile {
       position: relative;
       left: 0;
       order: 1;
       padding-bottom: 70px;
+    }
+    @include desktop-large{
+      // padding-top: 1rem;
+      // top: 1rem;
     }
   }
   .div-section-three h2 {
@@ -478,10 +495,15 @@ hr {
     }
   }
   .div-section-four {
+    padding-top: 20px;
     @include mobile {
       position: relative;
       right: 0;
       padding-bottom: 70px;
+    }
+    @include desktop-large{
+      position: relative;
+      // top: 1rem;
     }
   }
   .div-section-four h2 {
@@ -525,6 +547,7 @@ hr {
     // top: 50px;
   }
   .div-section-five {
+    padding-top: 20px;
     @include mobile {
       position: relative;
       left: 0;
@@ -878,7 +901,7 @@ footer {
     }
     @include mobile {
       flex-direction: column;
-      gap: 28px;
+      gap: 18px;
       align-items: start;
     }
     @include desktop-large {
@@ -923,6 +946,7 @@ footer {
     @include mobile {
       justify-content: start;
       top: 30px;
+      left: 0;
       // right: 20px;
     }
     @include desktop-large {
