@@ -13,6 +13,9 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  @media only screen and (max-width:1300px){
+    padding: 0;
+  }
   @include desktop-small {
     padding: 0;
   }
@@ -23,8 +26,8 @@ body {
     padding: 0;
   }
 }
-img{
-  display:block;
+img {
+  display: block;
 }
 .navbar {
   @include flex;
@@ -258,13 +261,24 @@ img{
     width: 40px;
   }
   a {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin-top: 1rem;
     font-size: 14px;
     text-decoration: none;
     &:visited {
       color: $blue-color;
     }
+  }
+  span {
+    padding-top: 10px;
+  }
+  .cards-arrow {
+    width: 10%;
+    padding-top: 8px;
+    // padding-bottom: 5px;
+    padding-left: 5px;
+    margin-left: 20px;
   }
 }
 .card-one {
@@ -293,11 +307,7 @@ img{
     margin: auto;
   }
 }
-.cards-arrow {
-  margin-top: 1rem;
-  width: 10px;
-  height: 12px;
-}
+
 .subscription-heading {
   width: 50%;
   margin: 0 auto;
@@ -358,7 +368,7 @@ img{
     position: relative;
     right: 0;
     left: 3rem;
-  //  padding-top: 1.5rem;
+    //  padding-top: 1.5rem;
   }
   h2 {
     @include desktop-large {
@@ -423,7 +433,7 @@ hr {
       order: 1;
       padding-bottom: 70px;
     }
-    @include desktop-large{
+    @include desktop-large {
       // padding-top: 1rem;
       // top: 1rem;
     }
@@ -501,7 +511,7 @@ hr {
       right: 0;
       padding-bottom: 70px;
     }
-    @include desktop-large{
+    @include desktop-large {
       position: relative;
       // top: 1rem;
     }

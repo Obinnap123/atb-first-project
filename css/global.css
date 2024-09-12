@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    padding: 0;
+  }
+}
 @media (max-width: 1024px) {
   .wrapper {
     padding: 0;
@@ -345,13 +350,23 @@ img {
   width: 40px;
 }
 .cards a {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   margin-top: 1rem;
   font-size: 14px;
   text-decoration: none;
 }
 .cards a:visited {
   color: blue;
+}
+.cards span {
+  padding-top: 10px;
+}
+.cards .cards-arrow {
+  width: 10%;
+  padding-top: 8px;
+  padding-left: 5px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -386,12 +401,6 @@ img {
     width: 45%;
     margin: auto;
   }
-}
-
-.cards-arrow {
-  margin-top: 1rem;
-  width: 10px;
-  height: 12px;
 }
 
 .subscription-heading {
