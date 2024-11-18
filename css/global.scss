@@ -13,7 +13,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  @media only screen and (max-width:1300px){
+  @media only screen and (max-width: 1300px) {
     padding: 0;
   }
   @include desktop-small {
@@ -50,8 +50,26 @@ img {
     display: none;
     @include mobile {
       display: block;
+      cursor: pointer;
+      width: 20px !important ;
+      height: 20px;
+    }
+    .img-hamburger {
+      display: block;
+    }
+    .x-icon {
+      display: none; // Hide 'X' by default
+    }
+    &.active {
+      .img-hamburger {
+        display: none;
+      }
+      .x-icon {
+        display: block;
+      }
     }
   }
+
   & .navbar-ul {
     @include flex($justify: center);
     margin-bottom: 10px;
@@ -63,7 +81,7 @@ img {
       gap: 2.5rem;
     }
     @include mobile {
-      display: none !important ;
+      display: none;
     }
     li a {
       color: $black;
@@ -76,6 +94,7 @@ img {
       }
     }
   }
+
   & .navbar-div {
     display: flex;
     gap: 5rem;
@@ -84,7 +103,8 @@ img {
       gap: 3rem;
     }
     @include mobile {
-      display: none;
+      flex-direction: column;
+      gap: 2rem;
     }
     & .sign-in {
       @include auth;
@@ -104,9 +124,33 @@ img {
     }
   }
 }
-.img-hamburger {
-  width: 20px !important ;
-  height: 20px;
+
+.menu {
+  position: relative;
+  @include mobile {
+    display: none;
+  }
+  &.active {
+    @include mobile {
+      position: absolute;
+      top: 75px;
+      display: flex;
+      // display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 50%;
+      border-radius: 6px;
+      text-align: center;
+      padding: 24px 0px;
+      margin: 0 auto;
+      left: 50%;
+      // transform: translate(-50%, 0);
+      font: {
+        size: 14px;
+      }
+      z-index: 100;
+    }
+  }
 }
 .header-hero {
   display: flex;

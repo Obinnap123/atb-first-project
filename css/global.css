@@ -72,7 +72,22 @@ img {
 @media (max-width: 768px) {
   .navbar .hamburger {
     display: block;
+    cursor: pointer;
+    width: 20px !important;
+    height: 20px;
   }
+}
+.navbar .hamburger .img-hamburger {
+  display: block;
+}
+.navbar .hamburger .x-icon {
+  display: none;
+}
+.navbar .hamburger.active .img-hamburger {
+  display: none;
+}
+.navbar .hamburger.active .x-icon {
+  display: block;
 }
 .navbar .navbar-ul {
   display: flex;
@@ -92,7 +107,7 @@ img {
 }
 @media (max-width: 768px) {
   .navbar .navbar-ul {
-    display: none !important;
+    display: none;
   }
 }
 .navbar .navbar-ul li a {
@@ -116,7 +131,8 @@ img {
 }
 @media (max-width: 768px) {
   .navbar .navbar-div {
-    display: none;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 .navbar .navbar-div .sign-in {
@@ -146,9 +162,30 @@ img {
   color: grey !important;
 }
 
-.img-hamburger {
-  width: 20px !important;
-  height: 20px;
+.menu {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .menu.active {
+    position: absolute;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 24px 0px;
+    margin: 0 auto;
+    left: 50%;
+    font-size: 14px;
+    z-index: 100;
+  }
 }
 
 .header-hero {
